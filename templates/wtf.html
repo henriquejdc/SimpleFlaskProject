@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+
+{% block conteudo %}
+<h1>Cadastro de Livros Flask-WTF</h1>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.titulo.label }} {{ form.titulo() }}
+    <br>
+    {{ form.autor.label }} {{ form.autor() }}
+    <br>
+    {{ form.vivo.label }} {{ form.vivo() }}
+    <br>
+    {{ form.genero.label }} {{ form.genero() }}
+    <br>
+    <p>Resumo da Obra</p>
+    <br>
+    {{ form.resumo() }}
+    <br>
+    {{ form.submit() }}
+</form>
+{% endblock %}

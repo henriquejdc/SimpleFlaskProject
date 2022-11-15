@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block conteudo %}
+    <p>Formulário</p>
+    <form method="POST">
+        Nome:
+        <br>
+        <label>
+            <input type="text" name="nome">
+        </label>
+        <br>
+        Email:
+        <br>
+        <label>
+            <input type="email" name="email">
+        </label>
+        <br>
+        Senha:
+        <br>
+        <label>
+            <input type="password" name="senha">
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+{% endblock %}
